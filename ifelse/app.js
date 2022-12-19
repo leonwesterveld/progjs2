@@ -28,14 +28,7 @@ class App
             console.log("hoog")
         }
 
-        
-        let kleur = Math.random();
-        if (kleur > 0.5){
-            "yellow"
-        }
-        else if (kleur < 0.5){
-            "blue"
-        }
+      
         
         g.beginPath()
         g.fillStyle = "red";
@@ -76,8 +69,14 @@ class App
         g.stroke();
         g.fill();
 
-        g.beginPath()
-        g.fillStyle = kleur;
+        g.beginPath()  
+        let kleur = Math.random();
+        if (kleur > 0.5){
+            g.fillStyle = "yellow"
+        }
+        else if (kleur < 0.5){
+            g.fillStyle = "blue"
+        }
         g.moveTo(650,450)
         g.lineTo(650,550)
         g.lineTo(750,500)
