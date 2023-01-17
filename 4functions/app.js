@@ -7,7 +7,16 @@ class App
         let canvas = document.getElementById("canvasId")
         console.log(canvas)
         let g = canvas.getContext("2d");
+        g.fillRect(0,0,10,10)
+        Huis();
+        this.Huis();
         
+        
+
+    }
+
+    Huis()
+    {
         g.beginPath()
         g.fillStyle = "red";
         g.moveTo(300,100)
@@ -62,9 +71,11 @@ class App
         g.closePath();
         g.stroke();
         g.fill();
-
     }
 }
 
+
+Huis();
 let app = new App();
 app.runApplication();
+app.Huis();
